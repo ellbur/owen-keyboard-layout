@@ -1,0 +1,11 @@
+#!/usr/bin/zsh
+
+here="$(dirname $0)"
+map_keyboard=$here/map-keyboard-4
+
+for k in /dev/input/by-path/*kbd ; do
+    $map_keyboard $k &
+done
+
+wait
+

@@ -1,0 +1,9 @@
+Package: owen-kbd-layout
+Version: 1.0
+Section: custom
+Priority: optional
+Architecture: amd64
+Essential: no
+Installed-Size: 4376
+Maintainer: ellbur@gmail.com
+Description: My keyboard layout

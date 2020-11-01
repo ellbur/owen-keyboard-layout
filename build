@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+dpkg-deb --build owen-kbd-layout
+
+version=$(dpkg --info owen-kbd-layout.deb | grep Version | awk '{ print $2 }')
+mv owen-kbd-layout.deb ./owen-kbd-layout_$version.deb
+
